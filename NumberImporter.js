@@ -38,7 +38,7 @@
       for(var i=0; i<aNumberChunks.length; i++){
         this.sRealNumber += (this.numbersMap.indexOf( aNumberChunks[i] ) > -1)? this.numbersMap.indexOf( aNumberChunks[i] ) : aNumberChunks[i];
       }
-      return this.sRealNumber;
+      return this.sRealNumber.replace(/[^0-9]/gi,'');
     }
 
     /**
